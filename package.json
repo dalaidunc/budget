@@ -5,6 +5,9 @@
   "main": "index.js",
   "scripts": {
     "build": "rollup --format iife js/app.js > build/app.js",
+    "rollup:watch": "rollup --watch --format iife --input js/app.js --output build/app.js",
+    "sass:watch": "sass --watch style.scss",
+    "build:watch": "parallelshell 'npm run rollup:watch' 'npm run sass:watch'",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
@@ -16,6 +19,8 @@
     "mithril": "^0.2.5"
   },
   "devDependencies": {
-    "rollup": "^0.35.11"
+    "parallelshell": "^2.0.0",
+    "rollup": "^0.35.11",
+    "rollup-watch": "^2.5.0"
   }
 }
