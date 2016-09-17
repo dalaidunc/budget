@@ -1,0 +1,21 @@
+{
+  "name": "simplebudget",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "rollup --format iife js/app.js > build/app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "chart.js": "^2.2.2",
+    "mithril": "^0.2.5"
+  },
+  "devDependencies": {
+    "rollup": "^0.35.11"
+  }
+}
