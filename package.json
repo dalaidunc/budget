@@ -6,17 +6,19 @@
   "scripts": {
     "build": "rollup --format iife js/app.js > build/app.js",
     "rollup:watch": "rollup --watch --format iife --input js/app.js --output build/app.js",
-    "sass:watch": "sass --watch style.scss",
+    "sass:watch": "sass --watch sass:css",
     "build:watch": "parallelshell 'npm run rollup:watch' 'npm run sass:watch'",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
-  "author": "",
+  "author": "Duncan Grant",
   "license": "ISC",
   "dependencies": {
     "bootstrap": "^3.3.7",
     "chart.js": "^2.2.2",
-    "mithril": "^0.2.5"
+    "express": "^4.14.0",
+    "mithril": "^0.2.5",
+    "pug": "^2.0.0-beta6"
   },
   "devDependencies": {
     "parallelshell": "^2.0.0",

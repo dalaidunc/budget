@@ -1,0 +1,10 @@
+doctype html
+html
+  head
+    //- TODO: bundle node_modules stuff into build... exposing node_modules directly is not safe!
+    script(src='vendor/mithril/mithril.min.js')
+    script(src='vendor/chart.js/dist/Chart.bundle.min.js')
+    link(rel='stylesheet', type='text/css', href='vendor/bootstrap/dist/css/bootstrap.css')
+    link(rel='stylesheet', type='text/css', href='css/style.css')
+  body
+    script(src='js/app.js')
