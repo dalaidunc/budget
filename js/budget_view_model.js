@@ -1,5 +1,6 @@
 // View-Model
 const BudgetViewModel = {
+  props: ['name', 'description', 'value'],
   reset: function () {
     vm.name = m.prop('');
     vm.description = m.prop('');

@@ -6,6 +6,10 @@ const BudgetForm = {
     return m('form', {
         onsubmit: function (e) {
           e.preventDefault();
+          var data = new FormData(this);
+          vm.props.forEach(function (prop) {
+            vm[prop] = m.prop(data.get(prop));
+          });
           vm.add();
           this.querySelector('input').focus();
         },
